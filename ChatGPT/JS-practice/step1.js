@@ -87,7 +87,20 @@ console.log(checkNumber(22));
 // 回傳從 1 加到 n 的總和
 // 例如 sumToN(5) => 15
 
+// 解題
+// 建立變數total = 0
+// 用for迴圈從1跑到n
 
+const sumToN = (n) => {
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total = total + i;
+  }
+  return total;
+};
+
+console.log(sumToN(5)); // 15
+console.log(sumToN(10)); // 55
 
 // 寫一個函數 judge，接收一個參數 score
 // 分數 >= 90 回傳 "A"
